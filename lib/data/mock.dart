@@ -65,3 +65,9 @@ final List<Map<String, dynamic>> recentlyViewed = [
     "isFavorite": false,
   },
 ];
+
+
+  final cards = [
+      {'number': '**** **** **** 1921', 'date': '07/25'},
+      {'number': '**** **** **** 5632', 'date': '07/25'},
+    ];

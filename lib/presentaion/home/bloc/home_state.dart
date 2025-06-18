@@ -15,3 +15,14 @@ class AddedToFavState extends HomeState {
 
   AddedToFavState({required this.item});
 }
+
+class StoreInSharePreferencesSuccessState extends HomeState {
+  final List<Map<String, dynamic>> item;
+
+  StoreInSharePreferencesSuccessState({required this.item});
+}
+class LoadFromSharePreferencesSuccessState extends HomeState {
+  final List<Map<String, dynamic>> item;
+
+  LoadFromSharePreferencesSuccessState({required this.item});
+}

@@ -1,20 +1,72 @@
-<<<<<<< HEAD
-# mexoraapp
-=======
-# mexoraapp
+📱 CyberLinio Mini Catalog – Mexora Flutter Assignment
 
-A new Flutter project.
+This is a 6-screen Flutter app built as part of the Mexora Developer Assignment, showcasing UI implementation, navigation, animations, and feature logic based on the provided Figma design.
 
-## Getting Started
+___________________________________________________________
 
-This project is a starting point for a Flutter application.
+🚀 Features Implemented
+	•	✅ Onboarding Screen
+	•	Skip / Log In → navigates to Home
+	•	Responsive layout
+	•	✅ Home Screen
+	•	Static product cards using local mock data
+	•	Horizontal scroll for categories (UI only)
+	•	Functional bottom navigation bar
+	•	✅ Product Detail Screen
+	•	Hero animation for product image
+	•	Favorite toggle with animation
+	•	“Add to Cart” and “Buy Now” with local state
+	•	Basic color variant switching
+	•	✅ Checkout Screen
+	•	Shows static payment info, totals
+	•	Finalize purchase → success dialog
+	•	✅ Bottom Navigation Bar
+	•	Navigates between Home, Cart, Wishlist and Profile
 
-A few resources to get you started if this is your first Flutter project:
+⸻
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+⚙️ State Management
+	•	Used: BLoC (flutter_bloc)
+	•	BLoC manages:
+	•	Cart state
+	•	Favorite items
+	•	Navigation state (where applicable)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> 5b575b6 (Initial commit)
+⸻
+
+💾 Local Data
+	•	Product and variant details are stored using static/mock JSON (no API used).
+	•	Shared Preferences used for persisting favorites (bonus implementation ✅).
+
+⸻
+
+🎨 Animations & UI Enhancements
+	•	Hero animation for product image
+	•	Heart icon scaling animation
+	•	Button tap feedback animations
+	•	Responsive layouts for various screen sizes
+____________
+
+🕒 Time Taken
+
+UI Implementation - 5 hrs
+Navigation + Animations - 3 hrs
+Cart + Favorites Logic (BLoC) - 2 hrs
+Debugging & Cleanup - 1 hr
+README + Final Packaging - 30 mins
+
+Total Time Taken: ~11.5 hours
+
+_________
+
+❗ Known Issues
+	•	No light/dark theme toggle due to time constraints
+	•	Minor responsiveness tweaks possible on tablet-sized screens
+
+⸻
+
+👨‍💻 Developer
+
+Name: Venkateswaran J
+Email: venkatjai.j@gmail.com
+Submission Date: 19 June 2025

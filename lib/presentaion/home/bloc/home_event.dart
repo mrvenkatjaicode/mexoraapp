@@ -11,3 +11,12 @@ class AddToFavEvent extends HomeEvent {
 
   AddToFavEvent({required this.item});
 }
+
+class StoreInSharePreferencesEvent extends HomeEvent {
+  final Map<String, dynamic> item;
+
+  StoreInSharePreferencesEvent({required this.item});
+}
+class LoadFromSharePreferencesEvent extends HomeEvent {
+  LoadFromSharePreferencesEvent();
+}

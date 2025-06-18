@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mexoraapp/core/constants.dart';
-import 'package:mexoraapp/presentaion/home/pages/home_screen.dart';
+import 'package:mexoraapp/presentaion/homemain/pages/homemain_screen.dart';
 import 'package:mexoraapp/presentaion/onboard/bloc/onboard_bloc.dart';
 import 'package:mexoraapp/presentaion/onboard/bloc/onboard_event.dart';
 import 'package:mexoraapp/presentaion/onboard/bloc/onboard_state.dart';
@@ -18,7 +18,7 @@ class OnboardScreen extends StatelessWidget {
           if (state is NavigateSuccessState) {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (_) => HomeScreen()),
+              MaterialPageRoute(builder: (_) => HomemainScreen()),
             );
             context.read<OnboardBloc>().isLoadingSkip = false;
             context.read<OnboardBloc>().isLoadingLogIn = false;

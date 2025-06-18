@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mexoraapp/presentaion/home/pages/home_screen.dart';
+import 'package:mexoraapp/presentaion/homemain/pages/homemain_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:mexoraapp/presentaion/onboard/pages/onboard_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'Mexora',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: FutureBuilder<bool>(
@@ -38,7 +39,9 @@ class MyApp extends StatelessWidget {
 
           return BlocProvider(
             create: (_) => OnboardBloc(),
-            child: showOnboarding ? const OnboardScreen() : const HomeScreen(),
+            child: showOnboarding
+                ? const OnboardScreen()
+                : const HomemainScreen(),
           );
         },
       ),
