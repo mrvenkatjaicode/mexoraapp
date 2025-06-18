@@ -1,4 +1,4 @@
-package com.mexora.in
+package com.mexora.app
 
 import io.flutter.embedding.android.FlutterActivity
 

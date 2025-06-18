@@ -84,25 +84,25 @@ class OnboardScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    AnimatedContainer(
-                      duration: const Duration(milliseconds: 300),
-                      width: context.read<OnboardBloc>().isLoadingLogIn
-                          ? 50
-                          : MediaQuery.of(context).size.width,
-                      height: 50,
-                      curve: Curves.easeInOut,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF03C27E),
-                        borderRadius: BorderRadius.circular(32),
-                      ),
-                      child: GestureDetector(
-                        onTap: context.read<OnboardBloc>().isLoadingLogIn
-                            ? null
-                            : () {
-                                context.read<OnboardBloc>().add(
-                                  OnNavigateLogInEvent(),
-                                );
-                              },
+                    InkWell(
+                      onTap: context.read<OnboardBloc>().isLoadingLogIn
+                          ? null
+                          : () {
+                              context.read<OnboardBloc>().add(
+                                OnNavigateLogInEvent(),
+                              );
+                            },
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 300),
+                        width: context.read<OnboardBloc>().isLoadingLogIn
+                            ? 50
+                            : MediaQuery.of(context).size.width,
+                        height: 50,
+                        curve: Curves.easeInOut,
+                        decoration: BoxDecoration(
+                          color: Color(0xFF03C27E),
+                          borderRadius: BorderRadius.circular(32),
+                        ),
                         child: Center(
                           child: AnimatedSwitcher(
                             duration: const Duration(milliseconds: 300),
